@@ -16,7 +16,7 @@ module.exports = {
 
         // Убираем все лишние значения, оставляя только скобки.
         bracket.filter((item)=>{
-            return item === '('? true : item === ')' ? true : false;
+            return item === '(' || item === ')' ? true : false;
         })
 
         // Если длинна массива не четная, то вернется INVALID.
